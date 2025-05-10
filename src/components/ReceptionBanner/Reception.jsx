@@ -4,7 +4,7 @@ import { Button } from '@mui/material'
 
 const Reception = () => {
   return (
-    <div className="flex flex-col-reverse md:flex-row mt-10 w-full">
+    <div className="flex flex-col-reverse md:flex-row mt-10 w-full mb-4">
       {/* Image Section */}
       <div className="w-full md:w-1/2 flex justify-center items-center">
         <img
@@ -17,7 +17,7 @@ const Reception = () => {
       {/* Text Section */}
       <div className="w-full md:w-1/2 bg-[#f9f9f9] p-8 md:p-12 flex flex-col  sm:space-y-2">
         <div className="space-y-2 p-2 -mt-4 sm:mt-0">
-          <h1 className="sm:text-3xl text-2xl font-bold text-[#003366] font-roboto">
+          <h1 className="sm:text-3xl text-2xl font-bold text-[#003366] font-manrope">
             EXPERIENCE HOSPITALITY
           </h1>
           <h2 className="sm:text-3xl text-xl font-semibold text-[orangered] font-roboto">
