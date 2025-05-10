@@ -7,6 +7,8 @@ import 'swiper/css/pagination'
 import image1 from '../../assets/images/image1.jpg'
 import my1 from '../../assets/images/image2.jpg'
 import umberall from '../../assets/images/umbrella-chair.jpg'
+import FeaturedHotels from '../Featured_Hotels/FeaturedHotels'
+import Reception from '../ReceptionBanner/Reception'
 
 const Dashboard = () => {
   let carouselImage = [
@@ -55,6 +57,8 @@ const Dashboard = () => {
           ))}
         </Swiper>
       </div>
+      <FeaturedHotels />
+      <Reception />
     </>
   )
 }

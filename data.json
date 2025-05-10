@@ -1,0 +1,37 @@
+[
+    {
+        "key": 1,
+        "image": "https://source.unsplash.com/featured/?hotel,luxury",
+        "title": "Grand Palace Hotel",
+        "desc": "Experience world-class service in the heart of the city with breathtaking skyline views.",
+        "discount": "30% OFF"
+    },
+    {
+        "key": 2,
+        "image": "https://source.unsplash.com/featured/?beach,resort",
+        "title": "Ocean Breeze Resort",
+        "desc": "Relax by the sea in our private beach resort with luxury spa and fine dining.",
+        "discount": "25% OFF"
+    },
+    {
+        "key": 3,
+        "image": "https://source.unsplash.com/featured/?mountain,hotel",
+        "title": "Highland Retreat",
+        "desc": "A peaceful mountain getaway with cozy rooms and scenic hiking trails.",
+        "discount": "20% OFF"
+    },
+    {
+        "key": 4,
+        "image": "https://source.unsplash.com/featured/?hotel,pool",
+        "title": "Cityscape Suites",
+        "desc": "Modern suites with rooftop pool and easy access to downtown attractions.",
+        "discount": "35% OFF"
+    },
+    {
+        "key": 5,
+        "image": "https://source.unsplash.com/featured/?boutique,hotel",
+        "title": "The Velvet Orchid",
+        "desc": "A charming boutique hotel with elegant interiors and personalized service.",
+        "discount": "40% OFF"
+    }
+]
