@@ -1,1 +1,18 @@
 @import 'tailwindcss';
+
+/* Custom Swiper pagination like Instagram */
+.custom-swiper .swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.5);
+  width: 6px;
+  height: 6px;
+  margin: 0 4px !important;
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+
+.custom-swiper .swiper-pagination-bullet-active {
+  background: white;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
