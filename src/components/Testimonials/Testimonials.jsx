@@ -67,7 +67,7 @@ const Testimonials = () => {
               className="w-24 h-24 rounded-full object-cover mb-4 border-2 border-[orangered]"
             />
             {renderStars(testimonial.rating)}
-            <p className="text-[#2e7d32] text-sm leading-relaxed italic mb-4">
+            <p className="text-[#000000] text-sm leading-relaxed italic mb-4">
               “{testimonial.quote}”
             </p>
             <h3 className="text-[orangered] font-semibold">

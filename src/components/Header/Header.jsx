@@ -22,6 +22,9 @@ const navItems = ['Home', 'About', 'Contact']
 const route = [
   { name: 'Home', link: '/' },
   { name: 'About', link: '/about' },
+  { name: 'Services', link: '/services' },
+  { name: 'Rooms', link: '/rooms' },
+  { name: 'Gallery', link: '/gallery' },
   { name: 'Contact', link: '/contact-us' },
 ]
 
@@ -97,7 +100,7 @@ function Header(props) {
               fontWeight: 600,
             }}
           >
-            Kingsukh Inn & Stay
+            <Link to="/">Kingsukh Inn & Stay</Link>
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {route.map((item) => (

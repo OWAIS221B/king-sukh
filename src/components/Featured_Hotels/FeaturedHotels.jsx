@@ -16,6 +16,15 @@ const FeaturedHotels = () => {
       discount: '30% OFF',
       icon: <FavoriteBorderOutlined fontSize="small" />,
       view: <Visibility fontSize="small" />,
+      rating: 5,
+      amenities: [
+        'Beachfront',
+        'All-Inclusive',
+        'Bar',
+        'Gym',
+        'Private Balcony',
+      ],
+      price: '$220/night',
     },
     {
       key: 2,
@@ -25,6 +34,15 @@ const FeaturedHotels = () => {
       discount: '25% OFF',
       icon: <FavoriteBorderOutlined fontSize="small" />,
       view: <Visibility fontSize="small" />,
+      rating: 4.5,
+      amenities: [
+        'Free WiFi',
+        'Breakfast Included',
+        'Spa',
+        'Swimming Pool',
+        'Airport Shuttle',
+      ],
+      price: '$180/night',
     },
     {
       key: 3,
@@ -34,6 +52,15 @@ const FeaturedHotels = () => {
       discount: '20% OFF',
       icon: <FavoriteBorderOutlined fontSize="small" />,
       view: <Visibility fontSize="small" />,
+      rating: 4,
+      amenities: [
+        'Mountain View',
+        'Hiking Trails',
+        'Free Parking',
+        'Fireplace',
+        'Pet Friendly',
+      ],
+      price: '$150/night',
     },
   ]
 
