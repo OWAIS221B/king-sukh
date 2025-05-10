@@ -3,6 +3,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Layout from './components/Layout/Layout'
 import NotFound from './components/NotFound/NotFound'
 import Dashboard from './components/Dashboard/Dashboard'
+import HotelsDetails from './components/HotelsDetails/HotelsDetails'
 
 const App = () => {
   const router = createBrowserRouter([
@@ -14,6 +15,10 @@ const App = () => {
         {
           index: true,
           element: <Dashboard />,
+        },
+        {
+          path: '/hotel-details/:id',
+          element: <HotelsDetails />,
         },
       ],
     },

@@ -47,7 +47,7 @@ const FeaturedHotels = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 p-12">
         {features.map((item) => (
-          <Link to="" key={item.key}>
+          <Link to={`/hotel-details/${item.key}`} key={item.key}>
             <Card feature={item} />
           </Link>
         ))}
