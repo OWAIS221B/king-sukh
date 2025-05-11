@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { Star, StarHalf } from '@mui/icons-material'
-import feature_1 from '../../assets/images/image1.jpg'
-import feature_2 from '../../assets/images/image2.jpg'
-import umbrella from '../../assets/images/umbrella-chair.jpg'
+import feature_1 from '../../assets/images/img4.jpg'
+import feature_2 from '../../assets/images/img5.jpg'
+import umbrella from '../../assets/images/img6.jpg'
 
 const features = [
   {
