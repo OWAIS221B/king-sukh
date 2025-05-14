@@ -28,6 +28,12 @@ const route = [
   { name: 'Contact', link: '/contact-us' },
 ]
 
+const mobileRoute = [
+  { name: 'Home', link: '/' },
+  { name: 'About', link: '/about' },
+  { name: 'Services', link: 'services' },
+]
+
 function Header(props) {
   const { window } = props
   const [mobileOpen, setMobileOpen] = React.useState(false)
@@ -37,41 +43,52 @@ function Header(props) {
   }
 
   const drawer = (
-    <Box
-      onClick={handleDrawerToggle}
-      sx={{
-        textAlign: 'center',
-        backgroundColor: '#111827',
-        height: '100%',
-        color: '#F3F4F6',
-      }}
+  <Box
+    onClick={handleDrawerToggle}
+    sx={{
+      textAlign: 'center',
+      backgroundColor: '#111827',
+      height: '100%',
+      color: '#F3F4F6',
+    }}
+  >
+    <Typography
+      variant="h6"
+      sx={{ my: 2, color: '#3B82F6', fontWeight: 600 }}
     >
-      <Typography
-        variant="h6"
-        sx={{ my: 2, color: '#3B82F6', fontWeight: 600 }}
-      >
-        Kingsukh Inn & Stay
-      </Typography>
-      <Divider sx={{ borderColor: '#374151' }} />
-      <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton
-              sx={{
+      Kingsukh Inn & Stay
+    </Typography>
+    <Divider sx={{ borderColor: '#374151' }} />
+    <List>
+      {mobileRoute.map((item) => (
+        <ListItem key={item.name} disablePadding>
+          <ListItemButton
+            component={Link}
+            to={item.link}
+            sx={{
+              justifyContent: 'center',
+              py: 1.5,
+              '&:hover': {
+                backgroundColor: '#1E293B',
+                color: '#3B82F6',
+              },
+            }}
+          >
+            <ListItemText
+              primary={item.name}
+              primaryTypographyProps={{
+                fontSize: '1rem',
+                fontWeight: 500,
                 textAlign: 'center',
-                '&:hover': {
-                  backgroundColor: '#1E293B',
-                  color: '#3B82F6',
-                },
               }}
-            >
-              <ListItemText primary={item} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-    </Box>
-  )
+            />
+          </ListItemButton>
+        </ListItem>
+      ))}
+    </List>
+  </Box>
+)
+
 
   const container =
     window !== undefined ? () => window().document.body : undefined
